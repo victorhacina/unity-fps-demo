@@ -1,0 +1,22 @@
+class car:
+
+    def _init_(self, length=250, height=160, width=150):
+        self.length = length
+        self.height = height
+        self.width  = width
+
+    def move(self, distance):
+        print(f"The car drives {distance} km")
+        return 0
+
+    def jump(self, n):
+        print(f"The car jumps {n} times")
+        return 0
+
+bmw = car()
+print(id(bmw))
+print(f"length of bmw is {bmw.length}")   
+vw = car()
+print(id(vw))
+vw.move(5)
+vw.jump(3)
